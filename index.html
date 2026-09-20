@@ -2,49 +2,173 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TraceTrust Technologies | Infrastructure Security & Compliance</title>
-  <style>
-    body {
-      background-color: #0f172a;
-      color: #f8fafc;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      text-align: center;
-      padding: 20px;
-    }
-    .card {
-      max-width: 600px;
-      border: 1px solid #1e293b;
-      padding: 40px;
-      border-radius: 12px;
-      background: #1e293b66;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-    }
-    h1 { font-size: 2rem; margin-bottom: 0.5rem; color: #38bdf8; }
-    p { color: #94a3b8; line-height: 1.6; margin-bottom: 1.5rem; }
-    .btn {
-      display: inline-block;
-      background-color: #0284c7;
-      color: #ffffff;
-      padding: 10px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .btn:hover { background-color: #0369a1; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TraceTrust — Automated Kubernetes Runtime Audits for NDPA Compliance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="card">
-    <h1>TraceTrust Technologies</h1>
-    <p>Enterprise Infrastructure Security & Continuous Automated Compliance for Cloud-Native Workloads.</p>
-    <p>Home of <strong>ndepa-scan</strong>: eBPF-powered runtime observability and NDPA regulatory policy enforcement.</p>
-    <a href="mailto:contact@tracetrust.io" class="btn">Get in Touch</a>
-  </div>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- NAVIGATION -->
+  <nav class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">TraceTrust</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-indigo-950 border border-indigo-800 text-indigo-300 font-mono">DPCO Partner Engine</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="#how-it-works" class="text-sm text-slate-400 hover:text-slate-200 transition">How It Works</a>
+        <a href="#capabilities" class="text-sm text-slate-400 hover:text-slate-200 transition">Capabilities</a>
+        <a href="#request-sample" class="text-sm font-semibold text-indigo-400 border border-indigo-500/30 hover:border-indigo-500 px-4 py-2 rounded-lg transition">Request Sample CAR</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. HERO SECTION -->
+  <header class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
+    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-300 text-xs font-mono mb-8">
+      <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span>NDPA Technical Audit Automation</span>
+    </div>
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+      Automated Kubernetes Runtime Audits <br class="hidden sm:inline"/>
+      <span class="bg-gradient-to-r from-indigo-400 via-sky-400 to-cyan-400 bg-clip-text text-transparent">for NDPA Compliance.</span>
+    </h1>
+    <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+      Powering licensed DPCO audit firms with eBPF runtime tracing and static Rego policy engines. Cut technical cluster audit delivery time by 70%.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#request-sample" class="px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 font-semibold text-white shadow-lg shadow-indigo-600/25 transition">
+        Request Sample Export-CAR Package
+      </a>
+      <a href="https://calendly.com/your-briefing-link" target="_blank" rel="noopener" class="px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 font-semibold text-slate-200 transition">
+        Book a Partner Technical Briefing
+      </a>
+    </div>
+  </header>
+
+  <!-- 2. VISUAL ARTIFACT / PROOF SECTION -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-2xl">
+      <div class="border border-slate-800 rounded-xl bg-slate-950 p-6 font-mono text-sm overflow-x-auto text-slate-300">
+        <!-- Mock Artifact Visual -->
+        <div class="flex items-center justify-between pb-4 border-b border-slate-800 text-xs text-slate-500 mb-4">
+          <span>BUNDLE_ID: EXPORT-CAR-2026-NDPA-K8S</span>
+          <span class="text-emerald-400">STATUS: IMMUTABLE_CLAUSE_MAPPED</span>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="space-y-2 border-r border-slate-800/60 pr-4">
+            <div class="text-indigo-400 font-bold mb-2">// Executive Audit Summary (PDF)</div>
+            <div class="text-slate-400">Target Cluster: <span class="text-slate-200">prod-aks-cluster-01</span></div>
+            <div class="text-slate-400">NDPA Control: <span class="text-slate-200">Art. 3.1(2) Technical Access Control</span></div>
+            <div class="text-slate-400">Finding: <span class="text-emerald-400">PASSED (0 Unprivileged Socket Binds)</span></div>
+            <div class="text-slate-400">Runtime Probe: <span class="text-slate-200">eBPF sys_enter_connect</span></div>
+          </div>
+          <div class="space-y-2">
+            <div class="text-cyan-400 font-bold mb-2">// Raw Telemetry Payload (JSON)</div>
+            <div class="text-slate-400">{ "clause": "NDPA-SEC-4", "status": "VERIFIED", "ebpf_events": 14209, "rego_evaluation": "COMPLIANT" }</div>
+            <div class="text-slate-500 text-xs mt-4">Calculated Hash: SHA256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-sm text-slate-400 mt-6 italic">
+        "Engineered specifically for NDPA submissions—clause-mapped evidence bundles generated directly from live eBPF socket events and cluster state."
+      </p>
+    </div>
+  </section>
+
+  <!-- 3. HOW IT WORKS FOR DPCO PARTNERS -->
+  <section id="how-it-works" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center text-white mb-12">How It Works for DPCO Partners</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-6">
+        <div class="w-10 h-10 rounded-lg bg-indigo-950 border border-indigo-800 flex items-center justify-center text-indigo-400 font-bold mb-4">1</div>
+        <h3 class="text-lg font-bold text-white mb-2">Non-Intrusive Execution</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Run <code class="text-indigo-300 font-mono">ndepa-scan</code> via signed CLI or temporary in-cluster DaemonSet during the audit window.
+        </p>
+      </div>
+      <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-6">
+        <div class="w-10 h-10 rounded-lg bg-indigo-950 border border-indigo-800 flex items-center justify-center text-indigo-400 font-bold mb-4">2</div>
+        <h3 class="text-lg font-bold text-white mb-2">Deep Runtime Telemetry</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Capture network flow events, privilege escalations, and resource configurations using eBPF kernel probes and Rego evaluation rules.
+        </p>
+      </div>
+      <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-6">
+        <div class="w-10 h-10 rounded-lg bg-indigo-950 border border-indigo-800 flex items-center justify-center text-indigo-400 font-bold mb-4">3</div>
+        <h3 class="text-lg font-bold text-white mb-2">Automated Evidence Export</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Instantly compile immutable, clause-mapped PDF and JSON bundles (<code class="text-indigo-300 font-mono">export-car</code>) formatted for official regulatory filings.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. KEY CAPABILITY HIGHLIGHTS -->
+  <section id="capabilities" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center text-white mb-12">Engineered for Strict Technical Audits</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 border-l-2 border-indigo-500 bg-slate-900/30">
+        <h3 class="font-bold text-white mb-2">Zero Overhead</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Non-disruptive, read-only cluster scanning with no external telemetry dependencies. Safe for active production workloads.
+        </p>
+      </div>
+      <div class="p-6 border-l-2 border-indigo-500 bg-slate-900/30">
+        <h3 class="font-bold text-white mb-2">Air-Gapped Ready</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Runs entirely within client environments—ideal for strict financial and healthtech compliance mandates with zero outbound data flow.
+        </p>
+      </div>
+      <div class="p-6 border-l-2 border-indigo-500 bg-slate-900/30">
+        <h3 class="font-bold text-white mb-2">Clause-Mapped Telemetry</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Maps Kubernetes primitives directly to NDPA technical security controls, eliminating manual cross-referencing work.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PRE-FOOTER CTA / CONVERSION SECTION -->
+  <section id="request-sample" class="max-w-4xl mx-auto px-6 py-20 text-center border-t border-slate-800">
+    <h2 class="text-3xl font-bold text-white mb-4">Accelerate Your DPCO Technical Audit Delivery Today</h2>
+    <p class="text-slate-400 mb-8 max-w-xl mx-auto">
+      Request a sample Export-CAR package containing authentic PDF and JSON telemetry reports to evaluate against your technical audit workflow.
+    </p>
+    <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 max-w-md mx-auto text-left shadow-xl">
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-400 mb-1">Work Email</label>
+          <input type="email" name="email" required placeholder="partner@dpco-firm.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-indigo-500" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-400 mb-1">DPCO Audit Firm Name</label>
+          <input type="text" name="firm" required placeholder="Compliance Advisory Partners" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-indigo-500" />
+        </div>
+        <button type="submit" class="w-full py-3 bg-indigo-600 hover:bg-indigo-500 font-semibold text-white rounded-lg transition text-sm">
+          Request Sample Export-CAR Bundle
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-900 bg-slate-950 py-12 text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <div class="font-bold text-slate-300 text-sm mb-1">TraceTrust Technologies</div>
+        <p>Automated Kubernetes Runtime Audits for NDPA Compliance.</p>
+      </div>
+      <div class="flex space-x-6">
+        <a href="mailto:partner@tracetrust.io" class="hover:text-slate-300 transition">Contact Support</a>
+        <a href="https://github.com/tracetrust" target="_blank" rel="noopener" class="hover:text-slate-300 transition">GitHub</a>
+        <a href="#" class="hover:text-slate-300 transition">Technical Documentation</a>
+      </div>
+      <div>
+        © 2026 TraceTrust Technologies. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
